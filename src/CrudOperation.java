@@ -166,9 +166,6 @@ public class CrudOperation {
             System.out.println("----------------------------------------");
         }
 
-        if (!rs.isBeforeFirst() && rs.getRow() == 0) {
-            System.out.println("No users found in the database.");
-        }
         rs.close();
         stmt.close();
         conn.close();
